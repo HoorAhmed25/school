@@ -1,0 +1,239 @@
+2021-11-22 19:40:59 [::1][-][9ddioejir1atg1u50f9gjspbcp][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii/index". in /home/hoor/school/vendor/yiisoft/yii2/base/Module.php:543
+Stack trace:
+#0 /home/hoor/school/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#1 /home/hoor/school/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#2 /home/hoor/school/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/hoor/school/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/hoor/school/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/hoor/school/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-22 19:40:59 [::1][-][9ddioejir1atg1u50f9gjspbcp][info][application] $_GET = [
+    'r' => 'gii/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => '9ddioejir1atg1u50f9gjspbcp'
+    '_csrf' => '960e50d0067c628f6c3fa1a13d7d2097d5b19ebb6e9cc27afce197a9eaf46b62a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_LSUCoTa5ZpbGZWI8elUqijKqGJOxjiQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/hoor/school/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55274'
+    'SERVER_SOFTWARE' => 'PHP 7.4.24 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/hoor/school/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=9ddioejir1atg1u50f9gjspbcp; _csrf=960e50d0067c628f6c3fa1a13d7d2097d5b19ebb6e9cc27afce197a9eaf46b62a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_LSUCoTa5ZpbGZWI8elUqijKqGJOxjiQ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1637610059.1762
+    'REQUEST_TIME' => 1637610059
+]
+2021-11-22 19:41:30 [::1][-][9ddioejir1atg1u50f9gjspbcp][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct()
+#1 /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php(1063): yii\db\Connection->open()
+#3 /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php(1050): yii\db\Connection->getMasterPdo()
+#4 /home/hoor/school/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /home/hoor/school/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#6 /home/hoor/school/vendor/yiisoft/yii2/db/Command.php(453): yii\db\Command->queryInternal()
+#7 /home/hoor/school/vendor/yiisoft/yii2/db/mysql/Schema.php(114): yii\db\Command->queryColumn()
+#8 /home/hoor/school/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames()
+#9 /home/hoor/school/vendor/yiisoft/yii2-gii/src/generators/model/Generator.php(182): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /home/hoor/school/vendor/yiisoft/yii2-gii/src/components/ActiveField.php(46): call_user_func()
+#12 /home/hoor/school/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct()
+#14 /home/hoor/school/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#15 /home/hoor/school/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#16 /home/hoor/school/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#17 /home/hoor/school/vendor/yiisoft/yii2/widgets/ActiveForm.php(334): yii\BaseYii::createObject()
+#18 /home/hoor/school/vendor/yiisoft/yii2-gii/src/generators/model/form.php(13): yii\widgets\ActiveForm->field()
+#19 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(348): require('/home/hoor/scho...')
+#20 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#21 /home/hoor/school/vendor/yiisoft/yii2-gii/src/views/default/view.php(43): yii\base\View->renderFile()
+#22 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(348): require('/home/hoor/scho...')
+#23 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#24 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#25 /home/hoor/school/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#26 /home/hoor/school/vendor/yiisoft/yii2-gii/src/controllers/DefaultController.php(72): yii\base\Controller->render()
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView()
+#28 /home/hoor/school/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#29 /home/hoor/school/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#30 /home/hoor/school/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#31 /home/hoor/school/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#32 /home/hoor/school/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#33 /home/hoor/school/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php(1063): yii\db\Connection->open()
+#1 /home/hoor/school/vendor/yiisoft/yii2/db/Connection.php(1050): yii\db\Connection->getMasterPdo()
+#2 /home/hoor/school/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /home/hoor/school/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#4 /home/hoor/school/vendor/yiisoft/yii2/db/Command.php(453): yii\db\Command->queryInternal()
+#5 /home/hoor/school/vendor/yiisoft/yii2/db/mysql/Schema.php(114): yii\db\Command->queryColumn()
+#6 /home/hoor/school/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames()
+#7 /home/hoor/school/vendor/yiisoft/yii2-gii/src/generators/model/Generator.php(182): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /home/hoor/school/vendor/yiisoft/yii2-gii/src/components/ActiveField.php(46): call_user_func()
+#10 /home/hoor/school/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct()
+#12 /home/hoor/school/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#13 /home/hoor/school/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#14 /home/hoor/school/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#15 /home/hoor/school/vendor/yiisoft/yii2/widgets/ActiveForm.php(334): yii\BaseYii::createObject()
+#16 /home/hoor/school/vendor/yiisoft/yii2-gii/src/generators/model/form.php(13): yii\widgets\ActiveForm->field()
+#17 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(348): require('/home/hoor/scho...')
+#18 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/hoor/school/vendor/yiisoft/yii2-gii/src/views/default/view.php(43): yii\base\View->renderFile()
+#20 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(348): require('/home/hoor/scho...')
+#21 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#22 /home/hoor/school/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#23 /home/hoor/school/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\View->render()
+#24 /home/hoor/school/vendor/yiisoft/yii2-gii/src/controllers/DefaultController.php(72): yii\base\Controller->render()
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView()
+#26 /home/hoor/school/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#27 /home/hoor/school/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#28 /home/hoor/school/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#29 /home/hoor/school/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#30 /home/hoor/school/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#31 /home/hoor/school/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1045
+    [2] => Access denied for user 'root'@'localhost' (using password: NO)
+)
+
+2021-11-22 19:41:29 [::1][-][9ddioejir1atg1u50f9gjspbcp][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'XDEBUG_SESSION' => 'XDEBUG_ECLIPSE'
+    'PHPSESSID' => '9ddioejir1atg1u50f9gjspbcp'
+    '_csrf' => '960e50d0067c628f6c3fa1a13d7d2097d5b19ebb6e9cc27afce197a9eaf46b62a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_LSUCoTa5ZpbGZWI8elUqijKqGJOxjiQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/hoor/school/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55320'
+    'SERVER_SOFTWARE' => 'PHP 7.4.24 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/hoor/school/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=9ddioejir1atg1u50f9gjspbcp; _csrf=960e50d0067c628f6c3fa1a13d7d2097d5b19ebb6e9cc27afce197a9eaf46b62a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_LSUCoTa5ZpbGZWI8elUqijKqGJOxjiQ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1637610089.8169
+    'REQUEST_TIME' => 1637610089
+]
+2021-11-22 19:57:40 [::1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException in /home/hoor/school/controllers/CheckController.php:24
+Stack trace:
+#0 [internal function]: app\controllers\CheckController->actionCheck()
+#1 /home/hoor/school/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /home/hoor/school/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#3 /home/hoor/school/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#4 /home/hoor/school/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#5 /home/hoor/school/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#6 /home/hoor/school/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2021-11-22 19:57:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'check/check'
+]
+
+$_POST = [
+    '{}' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/hoor/school/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55460'
+    'SERVER_SOFTWARE' => 'PHP 7.4.24 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?r=check/check'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/hoor/school/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=check/check'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'curl/7.76.1'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '2'
+    'HTTP_CONTENT_LENGTH' => '2'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_TIME_FLOAT' => 1637611060.4101
+    'REQUEST_TIME' => 1637611060
+]
